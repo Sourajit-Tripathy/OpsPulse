@@ -1,18 +1,27 @@
-🌦️ OpsPulse — Weather Data Pipeline
-> A simple but complete end-to-end data pipeline project built in Python.  
-> Fetches real weather data, saves it, cleans it, summarises it, charts it and tests it — all automated.
+# 🌦️ OpsPulse — Weather Data Pipeline
+
+A simple but complete end-to-end data pipeline project built in Python.  
+It fetches real weather data, saves it, cleans it, summarises it, visualises it, and tests it — all automatically.
+
 ---
-🎯 Business Problem
+
+## 🎯 Business Problem
+
 Every hour, weather stations around the world generate thousands of data points.  
-But raw data is messy, inconsistent and hard to read.
-OpsPulse solves this by:
-Automatically pulling live weather data from the internet
-Saving it safely to disk before touching it
-Cleaning and transforming it into something useful
-Producing a clear daily summary report
-Making sure everything works with automated tests
+But raw data is messy, inconsistent, and hard to interpret.
+
+**OpsPulse solves this by:**
+
+- Automatically pulling live weather data from the internet  
+- Saving raw data safely before any processing  
+- Cleaning and transforming data into usable format  
+- Generating daily summary reports  
+- Validating the pipeline using automated tests  
+
 ---
-🏗️ Project Architecture
+
+## 🏗️ Project Architecture
+
 ```
 Internet (Open-Meteo API)
          │
@@ -53,8 +62,11 @@ opspulse/
         └── test_pipeline.py       ← all 3 pytest tests
 ```
 ---
+
 🛠️ Tools & Technologies
+
 Tool	Purpose
+
 🐍 Python	Core programming language
 📓 Jupyter Notebook	Interactive development environment
 🌐 Requests	Fetches data from the Open-Meteo API
